@@ -29,4 +29,4 @@ double DotY(double X, double k2, double b2)
 }
 double Y = DotY(X, k2, b2);
 
-Console.WriteLine($"Crosspoint is: ({X}; {Y})");
+Console.WriteLine($"Crosspoint is: ({string.Format("{0:0.###} ", X)}; {string.Format("{0:0.###} ", Y)})");
