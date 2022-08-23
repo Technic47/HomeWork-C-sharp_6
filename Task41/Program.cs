@@ -2,7 +2,7 @@
 Посчитайте, сколько чисел больше 0 ввёл пользователь.
 */
 int count = 0;
-Console.WriteLine("Enter your number useing spacebar: ");
+Console.WriteLine("Enter your numbers: ");
 
 int[] numbers = Array.ConvertAll(Console.ReadLine()!.Split(' ', ',', '.', '\t'), int.Parse); 
 
