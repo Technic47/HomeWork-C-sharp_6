@@ -4,8 +4,7 @@
 int count = 0;
 Console.WriteLine("Enter your number useing spacebar: ");
 
-int[] numbers = Array.ConvertAll(Console.ReadLine()!.Split(), int.Parse); 
-// не первый раз натыкаюсь в поиске на Split. Видимо, пора его использовать.
+int[] numbers = Array.ConvertAll(Console.ReadLine()!.Split(' ', ',', '.', '\t'), int.Parse); 
 
 for (int i = 0; i < numbers.Length; i++) if (numbers[i] > 0) count++;
 
